@@ -1,0 +1,38 @@
+.full-content{
+    background-color: rgb(220, 239, 255);
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.title{
+    text-align: center;
+    font-size: 25pt;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.container, .score-board, .buttons-panel{
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.container img:hover{
+    box-shadow: 0px 10px 50px green;
+}
+
+#computer-score{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+#player-score{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK-PAPER-SCISSORS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="full-content">
+        <div class="title">
+            ROCK-PAPER-SCISSORS
+        </div>
+        <div class="container" id="container-div">
+            <img id="rock" src="assets/rock.png" alt="rock" height="200px" onclick="rpsgame(this)" >
+            <img id="paper" src="assets/paper.png" alt="paper"height="200px" onclick="rpsgame(this)">
+            <img id="scissors" src="assets/scissors.png" alt="scissors"height="200px" onclick="rpsgame(this)">
+        </div>
+        <div class="buttons-panel">
+            <button class="btn btn-primary m-1" onclick="onceAgain()">ONCE AGAIN</button>
+            <button class="btn btn-danger m-1" onclick="reload()">RESET</button>
+        </div>
+        <div class="score-board">
+            <div class="m-1 p-2" id="computer-score">
+                <h3>Computer's Score</h3>
+                <div id="cscore">
+                    <h1>0</h1>
+                </div>
+            </div>
+            <div class="m-1 p-2" id="player-score">
+                <h3>Player's Score</h3>
+                <div id="pscore">
+                    <h1>0</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
